@@ -9,19 +9,11 @@ const ingredients = [
   "Зелень",
   "Приправы"
 ];
- const ulList = document.querySelector("#ingredients");
-    console.log(ulList);
-const foodIngredients = [...ingredients].map(ingredient => {
-    const items = document.createElement("li");
-    ulList.append(items);
-}
-);
-
-//console.log(foodIngredients)
-    
-   
-
-//   items.innerHTML = ingredient;
-//   ulList.append(items);
-//   //parent.append(...items)
-// });
+ const ulList = document.querySelector("#ingredients"); 
+const elements = ingredients.map(ingredient => {
+  const items = document.createElement("li");    
+  items.textContent = ingredient;
+  return items;
+});
+ulList.append(...elements);
+console.log(ulList);
