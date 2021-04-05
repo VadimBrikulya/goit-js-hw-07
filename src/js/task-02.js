@@ -16,4 +16,3 @@ const elements = ingredients.map(ingredient => {
   return items;
 });
 ulList.append(...elements);
-console.log(ulList);
