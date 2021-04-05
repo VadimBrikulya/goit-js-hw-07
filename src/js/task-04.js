@@ -1,3 +1,4 @@
+"use strict";
 let counterValue = 0;
 const decBntRef = document.querySelector('[data-action="decrement"]');
 const incBntRef = document.querySelector('[data-action="increment"]');
