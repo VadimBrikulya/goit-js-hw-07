@@ -6,6 +6,6 @@ const output = document.querySelector("#name-output");
 input.oninput = function() {
   output.innerHTML = input.value;
   if (!input.value.length) {
-    output.textContent = "";
+    output.textContent = "незнакомец";
   }
 };
